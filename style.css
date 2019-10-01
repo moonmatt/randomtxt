@@ -1,0 +1,63 @@
+/* Reset all styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    /* UI Gradient by https://uigradients.com/ */
+    /* Thanks from moonmatt */
+
+    background: #eb3349; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eb3349, #f45c43); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eb3349, #f45c43); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100%;
+    width: 100%;
+}
+/* Text css */
+.text {
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 4vw;
+}
+/* Credits css */
+.credits {
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    margin: 5px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+/* Links css */
+.links {
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: white;
+    margin: 5px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+/* Hover effects */
+.links:hover {opacity: 0.8;}
+.credits:hover {opacity: 0.8;}
+
+
+
+
+/* Change text size from mobile */
+/* https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488 */
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .text {
+        font-size: 10vw;
+    }
+    
+  }
